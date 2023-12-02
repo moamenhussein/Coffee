@@ -1,0 +1,68 @@
+:root {
+  --main-color: #d3ad7f;
+  --second-color: #fff;
+  --black-color: #13131a
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+nav {
+  border-bottom: 4px solid #525151;
+}
+.logo {
+  width: 100px;
+}
+
+.nav li a {
+  color: var(--second-color);
+}
+.nav li a:hover,
+.about .container h2,
+.menu .container h2,
+.products .container h2,
+.review .container h2,
+.contact .container h2,
+.face,
+.star,
+.blogs .container h2,
+.day,
+.name {
+  color: var(--main-color);
+}
+.landing {
+  background-image: url("../imges/home-img.jpeg");
+  background-size: cover;
+  height: calc(100vh - 97px);
+}
+.landing .container {
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.button,
+.footer .container .social ul li a {
+  background-color: var(--main-color);
+}
+.aboutme,
+.form {
+  background-color: #13131a;
+}
+@media(max-width: 1000px) {
+  .search {
+    display: none;
+  }
+}
+.menu .container img,
+.review .container img {
+  width: 150px;
+  height: 150px;
+  border: 5px solid var(--second-color);
+}
